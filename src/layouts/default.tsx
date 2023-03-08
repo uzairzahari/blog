@@ -1,5 +1,6 @@
 import { ReactNode } from "react"
 import Header from "./includes/header"
+import Footer from './includes/footer'
 
 interface Props {
   children: ReactNode
@@ -11,7 +12,7 @@ const Default = ({children}: Props) => {
       <div className="container mx-auto flex flex-col min-h-screen">
         <Header />
         <main className="flex-1">{children}</main>
-        <Header />
+        <Footer />
       </div>
     </section>
   )
