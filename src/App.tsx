@@ -2,12 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import { Button } from 'react-daisyui'
+import Header from './layouts/includes/header'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
+      <Header />
       <div className='flex'>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
