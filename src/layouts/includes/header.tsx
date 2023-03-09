@@ -9,7 +9,7 @@ interface Route {
 const routes: Route[] = [
   { label: 'Home', url: '/' },
   { label: 'About', url: '/about' },
-  { label: 'Contact', url: '/contact' }
+  { label: 'Pricing', url: '/pricing' }
 ]
 
 const auth: Route[] = [
@@ -21,10 +21,10 @@ const Header: React.FC = () => {
   return (
     <div className='flex items-center py-5'>
       <div className="grow flex items-center gap-12">
-        <div className='font-bold text-4xl tracking-tighter text-zinc-900'>
+        <Link to="/" className='font-bold text-xl tracking-tight text-zinc-900 duration-500 hover:tracking-wide'>
           Brow.
-        </div>
-        <div className="grow-0 flex gap-3">
+        </Link>
+        <div className="grow-0 flex gap-5">
           {routes.map((route) => (
             <span key={route.url}>
               <Link

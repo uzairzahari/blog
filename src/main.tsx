@@ -2,18 +2,23 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './pages/index'
 import About from './pages/about/index'
+import Pricing from './pages/pricing/index'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
   },
   {
-    path: "/about",
+    path: '/about',
     element: <About />,
   },
+  {
+    path: 'pricing',
+    element: <Pricing />
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

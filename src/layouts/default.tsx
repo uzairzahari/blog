@@ -1,7 +1,7 @@
 import { ReactNode } from "react"
 import Header from "./includes/header"
-import Footer from './includes/footer'
-
+import Content from "./includes/content"
+import Footer from "./includes/footer"
 interface Props {
   children: ReactNode
 }
@@ -11,7 +11,9 @@ const Default = ({children}: Props) => {
     <section className="px-5 bg-zinc-50">
       <div className="container mx-auto flex flex-col min-h-screen">
         <Header />
-        <main className="flex-1">{children}</main>
+        <Content>
+          {children}
+        </Content>
         <Footer />
       </div>
     </section>
