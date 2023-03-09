@@ -8,8 +8,8 @@ interface Props {
 
 const Default = ({children}: Props) => {
   return (
-    <section className="px-5 bg-zinc-50">
-      <div className="container mx-auto flex flex-col min-h-screen">
+    <section className="bg-zinc-50">
+      <div className="container mx-auto px-4 flex flex-col">
         <Header />
         <Content>
           {children}

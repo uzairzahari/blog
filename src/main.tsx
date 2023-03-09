@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client'
 import App from './pages/index'
 import About from './pages/about/index'
 import Pricing from './pages/pricing/index'
+import Login from './pages/auth/login'
+import Signup from './pages/auth/signup'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 
@@ -16,8 +18,16 @@ const router = createBrowserRouter([
     element: <About />,
   },
   {
-    path: 'pricing',
+    path: '/pricing',
     element: <Pricing />
+  },
+  {
+    path: '/login',
+    element: <Login />
+  },
+  {
+    path: '/sign-up',
+    element: <Signup />
   }
 ])
 

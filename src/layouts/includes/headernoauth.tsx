@@ -13,11 +13,10 @@ const routes: Route[] = [
 ]
 
 const auth: Route[] = [
-  { label: 'Login', url: '/login' },
-  { label: 'Sign Up', url: '/sign-up'}
+  { label: 'Login', url: '/login' }
 ]
 
-const Header: React.FC = () => {
+const HeaderNoAuth: React.FC = () => {
   const location = useLocation()
   return (
     <div className='flex items-center py-5'>
@@ -25,7 +24,8 @@ const Header: React.FC = () => {
         <Link to="/" className='font-bold text-xl tracking-tight text-zinc-900 duration-500 hover:tracking-wide'>
           Brow.
         </Link>
-        <div className="grow-0 hidden md:flex gap-5">
+      </div>
+      <div className="shrink-0 hidden md:flex gap-5">
           {routes.map((route) => (
             <span key={route.url}>
               <Link
@@ -37,21 +37,8 @@ const Header: React.FC = () => {
             </span>
           ))}
         </div>
-      </div>
-      <div className='hidden md:flex gap-3 shrink-0'>
-        {auth.map((route) => (
-          <span key={route.url}>
-            <Link
-              to={route.url}
-              className="font-semibold btn btn-sm btn-ghost"
-            >
-                {route.label}
-            </Link>
-          </span>
-        ))}
-      </div>
     </div>
   )
 }
 
-export default Header
+export default HeaderNoAuth

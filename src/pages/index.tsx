@@ -29,7 +29,22 @@ function App() {
   ]
   return (
     <Default>
-      <div className='grid grid-cols-3 gap-5'>
+      <div className="hero min-h-min py-10">
+        <div className="hero-content text-center">
+          <div className="max-w-4xl">
+            <h1 className="text-5xl text-zinc-800 font-bold">
+              Hey, we are <span className="animate-pulse">Brow.</span> See our thoughts, stories and ideas.
+            </h1>
+            <p className="text-zinc-600 py-6">
+            Brow represents a group of individuals who are known for their
+            insightful thoughts, captivating stories, and innovative ideas.
+            They are visionaries who constantly push the boundaries of what
+            is possible and inspire others to do the same.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className='grid grid-cols-1 sm:grid-cols-2 nd:grid-cols-3 xl:grid-cols-4 gap-5'>
         {
           blogs.map((blog) => {
             return (
