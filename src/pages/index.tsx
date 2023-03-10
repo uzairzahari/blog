@@ -44,6 +44,9 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="text-zinc-600 text-center mb-5 font-semibold">
+        All Blog Posts
+      </div>
       <div className='grid grid-cols-1 sm:grid-cols-2 nd:grid-cols-3 xl:grid-cols-4 gap-5'>
         {
           blogs.map((blog) => {
@@ -56,6 +59,13 @@ function App() {
             )
           })
         }
+      </div>
+      <div className="flex justify-end">
+        <div className="mt-10 btn-group">
+          <button className="btn btn-outline">«</button>
+          <button className="btn btn-outline">Page 22</button>
+          <button className="btn btn-outline">»</button>
+        </div>
       </div>
     </Default>
   )
