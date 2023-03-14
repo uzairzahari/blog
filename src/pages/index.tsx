@@ -62,9 +62,9 @@ function App() {
       </div>
       <div className="flex justify-end">
         <div className="mt-10 btn-group">
-          <button className="btn btn-outline">«</button>
-          <button className="btn btn-outline">Page 22</button>
-          <button className="btn btn-outline">»</button>
+          <button className="btn btn-sm btn-outline">«</button>
+          <button className="btn btn-sm btn-outline">22</button>
+          <button className="btn btn-sm btn-outline">»</button>
         </div>
       </div>
     </Default>

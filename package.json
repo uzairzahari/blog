@@ -9,10 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@apollo/react-hooks": "^4.0.0",
     "@heroicons/react": "^2.0.16",
     "@types/lodash": "^4.14.191",
     "autoprefixer": "^10.4.13",
     "daisyui": "^2.51.3",
+    "graphql": "^16.6.0",
     "localforage": "^1.10.0",
     "lodash": "^4.17.21",
     "match-sorter": "^6.3.1",
